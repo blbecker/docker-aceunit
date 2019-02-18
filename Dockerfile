@@ -6,5 +6,5 @@ RUN apt-get update && \
 	curl -L "https://downloads.sourceforge.net/project/aceunit/aceunit/aceunit-0.12.0/AceUnit-0.12.0.jar?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Faceunit%2Ffiles%2Flatest%2Fdownload&ts=1550073943" -o /root/aceunit.jar
 
 RUN apt-get update && \
-	apt-get -y install default-jre && \
+	apt-get -y install default-jre gcc && \
 	apt-get -y upgrade
